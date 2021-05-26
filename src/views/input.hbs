@@ -1,0 +1,17 @@
+<div style="height: 50vh;">
+  <img style="height: 100%;"
+    url="http://www.vcongresonacionaldederechodisciplinario.com/wp-content/uploads/2021/05/Landing-Personeria-Bogota-03.jpg"
+    alt="">
+</div>
+{{#with error}}
+<div class="alert alert-danger" role="alert">
+  {{this}}
+</div>
+{{/with}}
+<form method="POST" action="/validar">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Digita tu cedula para descargar el certificado</label>
+    <input type="number" class="form-control" name="cedula">
+  </div>
+  <button type="submit" class="btn btn-primary">Validar</button>
+</form>
