@@ -64,6 +64,7 @@ Route.get('/', (req, res) => {
                                         <html>
                                         <head>
                                         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+                                        <style>
                                         *{
                                             margin: 0%;
                                             padding: 0%;
@@ -75,13 +76,12 @@ Route.get('/', (req, res) => {
                                            
                                         }
                                         .textos{
-                                            
                                             position: absolute;
-
-                                            top: 296px;
+                                            top: 294px;
                                             width: 100%;
                                         }
                                         .txts{
+                                            color:#5f6e7c;
                                             position: relative;
                                             left: 2%
                                         }
@@ -107,11 +107,11 @@ Route.get('/', (req, res) => {
                                 options: { "orientation": "landscape" }
                             });
 
-                        }else{ 
-                            res.render('input',{error:'esta cedula no cumple los requisitos para obtener el certificado'})
+                        } else {
+                            res.render('input', { error: 'esta cedula no cumple los requisitos para obtener el certificado' })
                         }
-                    }else{ 
-                        res.render('input',{error:'esta cedula no cumple los requisitos para obtener el certificado'})
+                    } else {
+                        res.render('input', { error: 'esta cedula no cumple los requisitos para obtener el certificado' })
                     }
                 })
         }
