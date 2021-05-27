@@ -57,7 +57,7 @@ Route.get('/', (req, res) => {
                             }
                             return [...acumulador, valorActual];
                         }, []);
-                        if (Total.length > 1) {
+                        if (Total.length > 0) {
                             res.pdfFromHTML({
                                 filename: 'generated.pdf',
                                 htmlContent: `
