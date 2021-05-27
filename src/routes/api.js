@@ -83,7 +83,6 @@ Route.get('/', (req, res) => {
                                             color:#5f6e7c;
                                             position: relative;
                                             left: 2%
-                                            font-size: 16px;
                                         }
                                         
                                     </style>
