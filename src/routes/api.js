@@ -40,7 +40,8 @@ Route.get('/', (req, res) => {
                             consultados.push(jsonArrayObj[usuario])
                         }
                     }
-                    if (consultados.length > 1) {
+                    console.log(consultados)
+                    if (consultados.length > 0) {
                         let Total = [];
                         Total = consultados.reduce((acumulador, valorActual) => {
                             const elementoYaExiste = acumulador.find(elemento => moment(elemento.Date).day() === moment(valorActual.Date).day());
@@ -82,7 +83,8 @@ Route.get('/', (req, res) => {
                                         .txts{
                                             color:#5f6e7c;
                                             position: relative;
-                                            left: 2%
+                                            left: 2%;
+
                                         }
                                         
                                     </style>
@@ -91,7 +93,7 @@ Route.get('/', (req, res) => {
                                 <div class="principal h-100 justify-content-center ">
                                     <div class="textos  translate-middle  text-center">
                                         <div class="txts col-12">
-                                            <h1>${Total[0].Name}</h1>
+                                            <h1>${Total[0].Name.toUpperCase()}</h1>
                                         </div>
                                         <div class="txts col-12 ">
                                             <h1>${cedula}</h1>
