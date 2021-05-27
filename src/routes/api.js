@@ -73,18 +73,17 @@ Route.get('/', (req, res) => {
                                             background:url('http://www.vcongresonacionaldederechodisciplinario.com/wp-content/uploads/2021/05/Certificado_V_Congreso_DD-01.jpg') ;
                                             background-size: 92%;
                                             background-repeat:no-repeat;
-                                           
                                         }
                                         .textos{
                                             position: absolute;
-                                            top: 200px;
+                                            top: 210px;
                                             width: 100%;
-                                            font-size: 16px;
                                         }
                                         .txts{
                                             color:#5f6e7c;
                                             position: relative;
                                             left: 2%
+                                            font-size: 16px;
                                         }
                                         
                                     </style>
