@@ -60,7 +60,7 @@ Route.get('/', (req, res) => {
                         }, []);
                         if (Total.length > 0) {
                             res.pdfFromHTML({
-                                filename: 'generated.pdf',
+                                filename: 'Certificado_De_Asistencia.pdf',
                                 htmlContent: `
                                         <html>
                                         <head>
