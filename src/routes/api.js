@@ -64,39 +64,42 @@ Route.get('/', (req, res) => {
                                         <html>
                                         <head>
                                         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-                                            <style>
-                                
-                                                *{
-                                                    margin: 0%;
-                                                    padding: 0%;
-                                                }
-                                                .principal{
-                                                    background-color: blue;
-                                                    background:url('http://www.vcongresonacionaldederechodisciplinario.com/wp-content/uploads/2021/05/Certificado_V_Congreso_DD-01.jpg') ;
-                                                    background-size: 92%;
-                                                    background-repeat:no-repeat;
-                                                }
-                                                .textos{
-                                                    width: 400px;
-                                                    height: 150px;
-                                                    position: absolute;
-                                                    top: 420px;
-                                                    left: 41%
-                                                }
-                                            </style>
-                                        </head>
-                                        <body>
-                                                <div class="principal w-100 h-100 ">
-                                                    <div class="textos d-flex justify-content-center text-center" >
-                                                    <div class="texto1 col-12 mb-4" >
-                                                    <h1>${Total[0].Name}</h1>
-                                                    </div>
-                                                    <div class="textos1 pt-6 col-12 position-absolute bottom-0 " >
-                                                    <h1>${cedula}</h1>
-                                                    </div>
-                                                    </div>
-                                                </div>
-                                        </body>
+                                        *{
+                                            margin: 0%;
+                                            padding: 0%;
+                                        }
+                                        .principal{
+                                            background:url('http://www.vcongresonacionaldederechodisciplinario.com/wp-content/uploads/2021/05/Certificado_V_Congreso_DD-01.jpg') ;
+                                            background-size: 92%;
+                                            background-repeat:no-repeat;
+                                           
+                                        }
+                                        .textos{
+                                            
+                                            position: absolute;
+
+                                            top: 296px;
+                                            width: 100%;
+                                        }
+                                        .txts{
+                                            position: relative;
+                                            left: 2%
+                                        }
+                                        
+                                    </style>
+                                </head>
+                                <body>
+                                <div class="principal h-100 justify-content-center ">
+                                    <div class="textos  translate-middle  text-center">
+                                        <div class="txts col-12">
+                                            <h1>${Total[0].Name}</h1>
+                                        </div>
+                                        <div class="txts col-12 ">
+                                            <h1>${cedula}</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                </body>
                                         </html> 
                                 
                                         `,
