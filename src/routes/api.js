@@ -77,7 +77,7 @@ Route.get('/', (req, res) => {
                                         }
                                         .textos{
                                             position: absolute;
-                                            top: 215px;
+                                            top: 235px;
                                             width: 100%;
                                         }
                                         .txts{
