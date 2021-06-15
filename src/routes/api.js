@@ -34,9 +34,10 @@ Route.get('/', (req, res) => {
             csv()
                 .fromFile(filePath)
                 .then(function (jsonArrayObj) {
+                    console.log(jsonArrayObj);
                     let consultados = []
                     for (const usuario in jsonArrayObj) {
-                        if (jsonArrayObj[usuario]['DOCUMENTO DE IDENTIFICACIÓN\nPor favor escribir su número de documento de identidad sin comas, ni puntos'] == cedula) {
+                        if (jsonArrayObj[usuario]['NumeroDocumento'] == cedula) {
                             consultados.push(jsonArrayObj[usuario])
                         }
                     }
@@ -92,7 +93,7 @@ font-size:10px;
                                 <div class="principal h-100 justify-content-center ">
                                     <div class="textos  translate-middle  text-center">
                                         <div class="txts col-12">
-                                            <h1>${Total[0]['NOMBRES Y APELLIDOS'].toUpperCase()}</h1>
+                                            <h1>${Total[0]['Name'].toUpperCase()}</h1>
                                         </div>
                                         <div class="txts col-12 ">
                                             <h1>${cedula}</h1>
